@@ -11,13 +11,13 @@ function update() {
     const date = new Date();
     const isoWeek = getIsoWeek(date);
 
-    e.date.calendar.quarter = QUARTERS[Math.floor(date.getMonth() / 3)];
-    e.date.calendar.month = MONTHS[date.getMonth()];
-    e.date.calendar.day = date.getDate();
+    e.date.calendar.quarter.textContent = QUARTERS[Math.floor(date.getMonth() / 3)];
+    e.date.calendar.month.textContent = MONTHS[date.getMonth()];
+    e.date.calendar.day.textContent = date.getDate();
 
-    e.date.mumps.mump = `M${1 + Math.floor((isoWeek - 1) / 4)}`;
-    e.date.mumps.week = `W${isoWeek}`;
-    e.date.mumps.dow = DAYS[date.getDay()];
+    e.date.mumps.mump.textContent = `M${1 + Math.floor((isoWeek - 1) / 4)}`;
+    e.date.mumps.week.textContent = `W${isoWeek}`;
+    e.date.mumps.dow.textContent = DAYS[date.getDay()];
 }
 
 setInterval(update, 10000);
