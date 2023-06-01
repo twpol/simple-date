@@ -9,20 +9,17 @@
 	</head>
 
 	<body>
-		<h1>Simple Date</h1>
-
-		<section id="date">
-			<section id="date-calendar">
-				<div id="date-calendar-quarter"></div>
-				<div id="date-calendar-month"></div>
-				<div id="date-calendar-day"></div>
+		<section class="column">
+			<div class="cell" id="date-calendar-quarter"></div>
+			<section class="row">
+				<div class="cell" id="date-calendar-month"></div>
+				<div class="cell" id="date-mumps-mump"></div>
 			</section>
-
-			<section id="date-mumps">
-				<div id="date-mumps-mump"></div>
-				<div id="date-mumps-week"></div>
-				<div id="date-mumps-dow"></div>
+			<section class="row">
+				<div class="cell" id="date-calendar-day"></div>
+				<div class="cell" id="date-mumps-week"></div>
 			</section>
+			<div class="cell" id="date-mumps-dow"></div>
 		</section>
 
 		<script src="pages/index.mjs" type="module"></script>

@@ -1,34 +1,36 @@
 html {
 	font-family: sans-serif;
+	font-size: 18vw;
 }
 
-#date {
-	font-size: 10vw;
+.column,
+.row {
 	display: flex;
 	flex-direction: column;
 }
 
-#date > section {
-	flex: 1;
-	display: flex;
+.row {
 	flex-direction: row;
 }
 
-#date > section > div {
+.column > *,
+.row > * {
 	flex: 1;
+}
+
+.cell {
 	position: relative;
-	height: 20vw;
-	line-height: 20vw;
+	line-height: 2rem;
 	text-align: center;
 }
 
-#date > section > div::after {
+.cell::after {
 	position: absolute;
+	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 5vw;
 	font-size: 50%;
-	line-height: normal;
+	line-height: 100%;
 	content: attr(sub);
 }
 
