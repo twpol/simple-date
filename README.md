@@ -1,2 +1,3 @@
-# simple-date
-Service for displaying the date in a simple form
+# Simple Date
+
+Service for displaying the date in a simple form.
